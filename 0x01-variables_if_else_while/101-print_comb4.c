@@ -3,14 +3,16 @@
 /**
  * main - Entry point
  *
- * Description: A C program that prints with put function
+ * Description: print all possible different
+ *		combination of three digits
  *
  * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	int digit1 = 0, digit2, digit3;
+	int digit1 = 0;
+	int digit2, digit3;
 
 	while (digit1 <= 9)
 	{
@@ -20,18 +22,22 @@ int main(void)
 			digit3 = 0;
 			while (digit3 <= 9)
 			{
-				if (digit1 != digit2 != digit3 && digit1 < digit2 < digit3)
+				if (digit1 != digit2 &&
+					digit1 < digit2 &&
+					digit2 != digit3 &&
+					digit2 < digit3)
 				{
 					putchar(digit1 + 48);
 					putchar(digit2 + 48);
 					putchar(digit3 + 48);
+
+					if (digit1 + digit2 + digit3 != 24)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
-				if (digit1 + digit2 + digit3 != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			digit3++;
+				digit3++;
 			}
 			digit2++;
 		}
