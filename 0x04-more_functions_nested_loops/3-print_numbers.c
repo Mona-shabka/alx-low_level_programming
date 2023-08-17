@@ -17,6 +17,6 @@ void print_numbers(void)
 		_putchar(n + 48);
 		n++;
 	}
-
 	_putchar('\n');
+
 }
