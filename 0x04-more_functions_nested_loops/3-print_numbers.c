@@ -10,9 +10,9 @@ void print_numbers(void)
 {
 	int c;
 
-	if (c >= 48 && c <= 57)
+	if (c >= 0 && c <= 9)
 	{
-		_putchar(c);
+		_putchar(c + 48);
 		c++;
 	}
 	_putchar('\n');
