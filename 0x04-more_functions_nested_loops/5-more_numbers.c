@@ -16,7 +16,8 @@ void more_numbers(void)
 		}
 		for (int m = 10; m <= 14; m++)
 		{
-			_putchar('1' m % 10);
+			mm = m % 10;
+			_putchar(49 + mm);
 		}
 		_putchar('\n');
 	}
