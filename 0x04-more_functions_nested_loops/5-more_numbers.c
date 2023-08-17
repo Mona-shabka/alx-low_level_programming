@@ -10,14 +10,14 @@ void more_numbers(void)
 {
 	for (int n = 1; n <= 10; n++)
 	{
-		for (int c = 0; c <= 9; c++)
+		for (int c = 0; c <= 14; c++)
 		{
 			_putchar(c + 48);
-		}
-		for (int m = 10; m <= 14; m++)
-		{
-			mm = m % 10;
-			_putchar(49 + mm);
+			if (c > 9)
+			{
+				c1 = c % 10;
+				_putchar(49 + c1);
+			}
 		}
 		_putchar('\n');
 	}
