@@ -2,19 +2,20 @@
 
 /**
 * print_numbers - a function that prints the numbers,
-*			from 0 to 9, followed by a new line.
+*			from 0 to 9,
+*			followed by a new line.
 * Description: print numbers 0 to 9.
-* Return: void
+* Return: void.
 */
 
 void print_numbers(void)
 {
-	int c = 0;
+	int n = 0;
 
-	if (c >= 0 && c <= 9)
+	if (n >= 0 && n <= 9)
 	{
-		_putchar(c + 48);
-		c++;
+		_putchar(n + 48);
+		n++;
 	}
 	_putchar('\n');
 }
