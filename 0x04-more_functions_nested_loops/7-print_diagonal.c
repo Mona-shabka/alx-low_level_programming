@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* print_line - a function that draws
-*               a straight line in the terminal.
-* @n: input for number of _ character.
+* print_diagonal - a function that draws
+*               a diagonal line in the terminal.
+* @n: input for number of \ character.
 */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int m;
 
