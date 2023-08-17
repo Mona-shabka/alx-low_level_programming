@@ -14,10 +14,10 @@ void more_numbers(void)
 	{
 		if (c >= 0 && c <= 14)
 		{
-			putchar(c + 48);
+			_putchar(c + 48);
 			c++;
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 	return (0);
 }
