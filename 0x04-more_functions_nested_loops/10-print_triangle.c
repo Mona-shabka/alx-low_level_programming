@@ -3,7 +3,7 @@
 /**
 * print_triangle - a function that prints a triangle,
 *		followed by a new line.
-* @size: input for #.
+* @size: size of triangle.
 * Return: 0 (success).
 */
 
@@ -15,7 +15,7 @@ void print_triangle(int size)
 		_putchar('\n');
 	else
 	{
-		for (h = 1; h <= size; n++)
+		for (h = 1; h <= size; h++)
 		{
 			for (w = 1; w <= size; w++)
 			{
