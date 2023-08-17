@@ -14,12 +14,12 @@ void more_numbers(void)
 	{
 		for (int c = 0; c <= 14; c++)
 		{
-			_putchar(c + 48);
 			if (c > 9)
 			{
 				c1 = c % 10;
 				_putchar(49 + c1);
 			}
+			_putchar(c + 48);
 		}
 		_putchar('\n');
 	}
