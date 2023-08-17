@@ -11,7 +11,6 @@
 void print_numbers(void)
 {
 	int n = 0;
-
 	if (n >= 0 && n <= 9)
 	{
 		_putchar(n + 48);
