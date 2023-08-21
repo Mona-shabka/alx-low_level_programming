@@ -16,14 +16,8 @@ void puts2(char *str)
 	{
 		m++;
 
-	if (m % 2 != 0)
-	{
-		continue;
-	}
-	else
-	{
+	if (m % 2 == 0)
 		_putchar(str[m]);
-	}
 	}
 	_putchar('\n');
 }
