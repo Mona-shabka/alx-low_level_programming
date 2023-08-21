@@ -8,7 +8,7 @@
 
 void rev_string(char *s)
 {
-	int m = -1;
+	int m = 0;
 	int n;
 	int mon;
 
@@ -17,10 +17,10 @@ void rev_string(char *s)
 		m++;
 	}
 
-	for (n = -1; n < m / 2; n++)
+	for (n = 0; n < m / 2; n++)
 	{
 		mon = s[n];
-		s[n] = s[m - n];
-		s[m - n] = mon;
+		s[n] = s[m - 1 - n];
+		s[m - 1 - n] = mon;
 	}
 }
