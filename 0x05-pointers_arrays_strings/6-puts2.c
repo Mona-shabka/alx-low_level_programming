@@ -16,7 +16,7 @@ void puts2(char *str)
 	{
 		m++;
 	}
-	if (m % 2 != 0)
+	if (m / 2 != 0)
 	{
 		continue;
 	}
@@ -26,4 +26,3 @@ void puts2(char *str)
 	}
 	_putchar('\n');
 }
-
