@@ -13,7 +13,6 @@ void puts_half(char *str)
 	{
 		int n = str[m] / 2;
 		int mon = str[m] - n;
-		int str[mon] = mon;
 
 		_putchar(str[mon]);
 	}
