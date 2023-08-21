@@ -6,6 +6,7 @@
 * @str: input for parameters.
 * Desription: If the number of characters is odd,
 *		prints (length_of_the_string - 1) / 2.
+* return: half of input.
 */
 
 void puts_half(char *str)
