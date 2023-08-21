@@ -22,7 +22,5 @@ void rev_string(char *s)
 		mon = s[n];
 		s[n] = s[m - 1 - n];
 		s[m - 1 - n] = mon;
-		_putchar(s[mon]);
 	}
-	_putchar('\n');
 }
