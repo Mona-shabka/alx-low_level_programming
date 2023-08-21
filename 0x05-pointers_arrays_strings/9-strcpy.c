@@ -13,8 +13,8 @@ char *_strcpy(char *dest, char *src)
 
 	while (src[m] != '\0')
 	{
-		m++;
 		dest[m] = src[m];
+		m++;
 	}
 
 	return (dest);
