@@ -9,9 +9,9 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int m = -1;
+	int m = 0;
 
-	while (src[m] != ('\0' + 1))
+	while (src[m] != ('\0' - 1))
 	{
 		dest[m] = src[m];
 		m++;
