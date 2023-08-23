@@ -3,11 +3,11 @@
 /**
 * string_toupper - a function that changes all lowercase letters
 *			of a string to uppercase.
-* @c: input for string.
+* @str: input for string.
 * Return: string.
 */
 
-char *string_toupper(char *c)
+char *string_toupper(char *str)
 {
 	int m;
 
@@ -18,5 +18,5 @@ char *string_toupper(char *c)
 			str[m] = str[m] - 32;
 		}
 	}
-	return (c);
+	return (str);
 }
