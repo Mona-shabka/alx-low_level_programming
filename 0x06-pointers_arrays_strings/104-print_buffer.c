@@ -56,6 +56,7 @@ void printASCII(char *b, int o, int e)
 		i++;
 	}
 }
+
 /**
 * print_buffer - a function that prints a buffer.
 * @b: input for string.
@@ -80,4 +81,3 @@ void print_buffer(char *b, int size)
 	} else
 		printf("\n");
 }
-
