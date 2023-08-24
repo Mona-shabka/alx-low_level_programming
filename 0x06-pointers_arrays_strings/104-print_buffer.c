@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * isPrintableASCII - show if n is printable ASCII char.
