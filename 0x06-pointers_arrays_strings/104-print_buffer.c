@@ -29,12 +29,14 @@ void printHexes(char *b, int o, int e)
 		if (i < e)
 			printf("%02x", *(b + o + i));
 		else
-			printf(" ");
+			printf("  ");
 		if (i % 2)
 			printf(" ");
 		i++;
 	}
 }
+
+
 /**
  * printASCII - a function that print ascii values from sting b.
  * @b: input for string.
@@ -50,6 +52,7 @@ void printASCII(char *b, int o, int e)
 	while (i < e)
 	{
 		c = *(b + i + o);
+
 		if (!isPrintableASCII(c))
 			c = 46;
 		printf("%c", c);
