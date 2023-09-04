@@ -14,7 +14,7 @@ int wrdcnt(char *s)
 	{
 		if (s[m] == ' ')
 		{
-			if (s[m + 1] != ' ' && s[i + 1] != '\0')
+			if (s[m + 1] != ' ' && s[m + 1] != '\0')
 				n++;
 		}
 		else if (m == 0)
