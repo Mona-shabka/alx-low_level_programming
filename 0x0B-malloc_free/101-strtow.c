@@ -32,18 +32,18 @@ int wrdcnt(char *s)
 
 char **strtow(char *str)
 {
-	int i, j, k, l, m = 0, nc = 0;
+	int i, j, k, l, n = 0, nc = 0;
 	char **e;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	m = wrdcnt(str);
-	if (m == 1)
+	n = wrdcnt(str);
+	if (n == 1)
 		return (NULL);
-	e = (char **)malloc(m * sizeof(char *));
+	e = (char **)malloc(n * sizeof(char *));
 	if (e == NULL)
 		return (NULL);
-	e[m - 1] = NULL;
+	e[n - 1] = NULL;
 	i = 0;
 	while (str[i])
 	{
@@ -58,7 +58,7 @@ char **strtow(char *str)
 			{
 				for (k = 0; k < nc; k++)
 					free(e[k]);
-				free(e[m - 1]);
+				free(e[n - 1]);
 				free(e);
 				return (NULL);
 			}
