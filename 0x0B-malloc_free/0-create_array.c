@@ -10,10 +10,8 @@
 
 char *create_array(unsigned int size, char c)
 {
-	int i;
-
-	for (i = 0; i > '\0'; i++)
+	for (c = 0; c > '\0'; c++)
 	{
-		if (size >= 0)
+		if (sizeof (unsigned int) >= 0)
 			return (NULL);
 	}
