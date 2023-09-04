@@ -10,8 +10,12 @@
 
 char *create_array(unsigned int size, char c)
 {
-	for (c = 0; c > '\0'; c++)
-	{
-		if (sizeof (unsigned int) >= 0)
-			return (NULL);
-	}
+	char *m = malloc(size);
+
+	if (size == 0 || n == 0)
+		return (0);
+
+	while (size--)
+		m[size] = c;
+
+	return (m);
