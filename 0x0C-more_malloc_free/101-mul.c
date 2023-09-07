@@ -42,6 +42,26 @@ int _atoi(const char *mon)
 	}
 	return (sign * r);
 }
+
+/**
+* print_int - a function that print numbers.
+* @m: number.
+* Return: 0
+*/
+
+void print_int(unsigned long int m)
+{
+	unsigned long int d = 1, i, r;
+
+	for (i = 0; m / d > 9; i++, d *= 10)
+		;
+	for (; d >= 1; m %= d, d /= 10)
+	{
+		r = m / d;
+		_putchar('0' + r);
+	}
+}
+
 /**
 * main - a program that multiplies two positive numbers.
 * @argc: number of arguments.
