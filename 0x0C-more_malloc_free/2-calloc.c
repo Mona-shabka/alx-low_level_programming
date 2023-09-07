@@ -27,16 +27,17 @@ char *memoryset(char *str, char a, unsigned int b)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *m_array;
+	char *m_array;
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
-	m_array = malloc(sizeof(int) * nmemb);
+
+	m_array = malloc(size * nmemb);
 
 	if (m_array == 0)
 		return (NULL);
 
-	memoryset(m_array, 0, sizeof(int) * nmemb);
+	memoryset(m_array, 0, size * nmemb);
 
 	return (m_array);
 }
