@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+#define ERR_MSG "Error"
 /**
 * _puts - a function that print string.
 * @m: string pointer.
