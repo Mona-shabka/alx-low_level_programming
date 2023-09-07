@@ -13,9 +13,7 @@ char *memoryset(char *str, char a, unsigned int b)
 	char *point = str;
 
 	while (b--)
-	{
 		*str++ = a;
-	}
 	return (point);
 }
 
@@ -38,7 +36,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (m_array == 0)
 		return (NULL);
 
-	memoryset(m_array, 0, sizeof(char) * nmemb);
+	memoryset(m_array, 0, sizeof(int) * nmemb);
 
 	return (m_array);
 }
