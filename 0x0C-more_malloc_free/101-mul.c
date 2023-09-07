@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 #define ERR_MSG "Error"
+
 /**
 * _puts - a function that print string.
 * @m: string pointer.
@@ -11,12 +12,12 @@
 
 void _puts(char *m)
 {
-	int n = 0;
+	int i = 0;
 
-	while (m[n])
+	while (m[i])
 	{
-		_putchar(m[n]);
-		n++;
+		_putchar(m[i]);
+		i++;
 	}
 }
 
@@ -79,7 +80,7 @@ int main(int argc, char const *argv[])
 
 	if (argc != 3)
 	{
-		_puts("Error");
+		_puts("Error ");
 		exit(98);
 	}
 	print_int(_atoi(argv[1]) * _atoi(argv[2]));
