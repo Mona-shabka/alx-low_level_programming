@@ -81,9 +81,9 @@ void print_int(unsigned long int m)
 
 int main(int argc, char const *argv[])
 {
-	/*(void)argc;*/
+	(void)argc;
 
-	if (argc != 3)
+	if (argc < 3)
 	{
 		_puts("Error\n");
 		exit(98);
