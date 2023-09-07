@@ -32,7 +32,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *m_array;
 
 	if (size == 0 || nmemb == 0)
-		return (NULL);
+		return (0);
 	m_array = malloc(sizeof(unsigned int) * nmemb);
 
 	if (m_array == 0)
