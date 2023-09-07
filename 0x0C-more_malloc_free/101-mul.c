@@ -32,7 +32,7 @@ int _atoi(const char *mon)
 	int sign = 1;
 	unsigned long int r = 0, num, n;
 
-	for (num = 0; !(mon[num] >= 48 && mon[num] <= 57); num++)
+	for (num = 0; !(mon[num] >= '0' && mon[num] <= '9'); num++)
 	{
 		if (mon[num] == '-')
 		{
@@ -40,10 +40,10 @@ int _atoi(const char *mon)
 		}
 	}
 
-	for (n = num; mon[n] >= 48 && mon[n] <= 57; n++)
+	for (n = num; mon[n] >= '0' && mon[n] <= '9'; n++)
 	{
 		r *= 10;
-		r += (mon[n] - 48);
+		r += (mon[n] - '0');
 	}
 
 	return (sign * r);
