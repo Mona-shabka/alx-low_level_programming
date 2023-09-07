@@ -14,6 +14,7 @@ char *memoryset(char *str, char a, unsigned int b)
 
 	while (b--)
 		*str++ = a;
+
 	return (point);
 }
 
