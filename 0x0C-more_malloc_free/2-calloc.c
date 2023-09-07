@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-* memoryset - a function that enter memory by constant.
+* *_memset - a function that enter memory by constant.
 * @str: pointer.
 * @a: constant.
 * @b: number of bytes that used.
 * Return: pointer (str).
 */
 
-char *memoryset(char *str, char a, unsigned int b)
+char *_memset(char *str, char a, unsigned int b)
 {
 	char *point = str;
 
@@ -19,7 +19,7 @@ char *memoryset(char *str, char a, unsigned int b)
 }
 
 /**
-* _calloc - a function that allocates memory for an array, using malloc.
+* *_calloc - a function that allocates memory for an array, using malloc.
 * @nmemb: array.
 * @size: size element.
 * Return: void.
@@ -36,6 +36,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (m_array == 0)
 		return (NULL);
 
-	memoryset(m_array, 0, sizeof(int) * nmemb);
+	_memset(m_array, 0, sizeof(int) * nmemb);
 	return (m_array);
 }
