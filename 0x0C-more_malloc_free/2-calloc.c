@@ -33,12 +33,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
-	m_array = calloc(sizeof(unsigned int) * nmemb);
+	m_array = malloc(sizeof(int) * nmemb);
 
 	if (m_array == 0)
 		return (NULL);
 
-	memoryset(m_array, 0, sizeof(int) * nmemb);
+	memoryset(m_array, 0, sizeof(char) * nmemb);
 
 	return (m_array);
 }
