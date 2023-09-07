@@ -40,5 +40,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	memoryset(m_arra, 0, sizeof(int) * nmemb);
 
-	return (m_arra);
+	return (0);
 }
