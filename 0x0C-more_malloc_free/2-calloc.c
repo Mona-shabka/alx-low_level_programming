@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-* *_memset - a function that enter memory by constant.
+* memoryset - a function that enter memory by constant.
 * @str: pointer.
 * @a: constant.
 * @b: number of bytes that used.
 * Return: pointer (str).
 */
 
-char *_memset(char *str, char a, unsigned int b)
+char *memoryset(char *str, char a, unsigned int b)
 {
 	char *point = str;
 
@@ -36,6 +36,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (m_array == 0)
 		return (NULL);
 
-	_memset(m_array, 0, sizeof(int) * nmemb);
+	memoryset(m_array, 0, sizeof(int) * nmemb);
+
 	return (m_array);
 }
