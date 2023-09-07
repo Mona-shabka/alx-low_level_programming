@@ -12,7 +12,7 @@ char *memoryset(char *str, char a, unsigned int b)
 {
 	char *point = str;
 
-	while (--b)
+	while (b--)
 		*str++ = a;
 	return (point);
 }
