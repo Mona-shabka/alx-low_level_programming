@@ -2,20 +2,19 @@
 
 /**
 * memoryset - a function that enter memory by constant.
-* @str: pointer.
+* @s: pointer.
 * @a: constant.
 * @b: number of bytes that used.
 * Return: pointer (point).
 */
 
-char *memoryset(char *str, char a, unsigned int b)
+char *memoryset(char *s, char a, unsigned int b)
 {
-	char *point = str;
+	char *point = s;
 
 	while (b--)
 	{
-		*str = a;
-		str++;
+		*s++ = a;
 	}
 	return (point);
 }
