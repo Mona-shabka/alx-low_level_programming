@@ -5,7 +5,7 @@
 * @str: pointer.
 * @a: constant.
 * @b: number of bytes that used.
-* Return: pointer (str).
+* Return: pointer (point).
 */
 
 char *memoryset(char *str, char a, unsigned int b)
@@ -22,7 +22,7 @@ char *memoryset(char *str, char a, unsigned int b)
 * *_calloc - a function that allocates memory for an array, using malloc.
 * @nmemb: array.
 * @size: size element.
-* Return: void.
+* Return: pointer.
 */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -31,6 +31,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
+
 	m_array = malloc(nmemb * sizeof(int));
 
 	if (m_array == 0)
