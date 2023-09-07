@@ -13,13 +13,15 @@ char *memoryset(char *str, char a, unsigned int b)
 	char *point = str;
 
 	while (b--)
-		*str++ = a;
-
+	{
+		*str = a;
+		str++;
+	}
 	return (point);
 }
 
 /**
-* *_calloc - a function that allocates memory for an array, using malloc.
+* _calloc - a function that allocates memory for an array, using malloc.
 * @nmemb: array.
 * @size: size element.
 * Return: pointer.
