@@ -72,7 +72,8 @@ void print_int(unsigned long int m)
 }
 
 /**
-* main - Entry point.
+* main - a function that reallocates a memory block
+*		using malloc and free.
 * @argc: number of arguments.
 * @argv: array list.
 * Return: 0.
@@ -90,5 +91,6 @@ int main(int argc, char const *argv[])
 	print_int(_atoi(argv[1]) * _atoi(argv[2]));
 	_putchar('\n');
 
+	free(argv);
 	return (0);
 }
