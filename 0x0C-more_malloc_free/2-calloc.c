@@ -20,15 +20,16 @@ char *memoryset(char *str, char a, unsigned int b)
 }
 
 /**
-* _calloc - a function that allocates memory for an array, using malloc.
-* @nmemb: array.
+* _calloc - a function that allocates memory for an array,
+*		using malloc.
+* @nmemb: array length.
 * @size: size element.
 * Return: pointer.
 */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *m_array;
+	char *m_array;
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
