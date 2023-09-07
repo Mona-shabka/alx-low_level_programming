@@ -72,7 +72,7 @@ void print_int(unsigned long int m)
 }
 
 /**
-* main - a program that multiplies two positive numbers.
+* main - Entry point.
 * @argc: number of arguments.
 * @argv: array list.
 * Return: 0.
@@ -87,7 +87,7 @@ int main(int argc, char const *argv[])
 		_puts("Error ");
 		exit(98);
 	}
-	print_int(_atoi(argv[2]) * _atoi(argv[1]));
+	print_int(_atoi(argv[1]) * _atoi(argv[2]));
 	_putchar('\n');
 
 	return (0);
