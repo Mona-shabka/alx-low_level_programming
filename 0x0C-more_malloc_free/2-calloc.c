@@ -29,7 +29,7 @@ char *memoryset(char *str, char a, unsigned int b)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *m_arra;
+	void *m_arra;
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
