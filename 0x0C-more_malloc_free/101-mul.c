@@ -35,6 +35,7 @@ int _atoi(const char *mon)
 			sign *= -1;
 		}
 	}
+
 	for (n = num; mon[n] >= 48 && mon[n] <= 57; n++)
 	{
 		r *= 10;
