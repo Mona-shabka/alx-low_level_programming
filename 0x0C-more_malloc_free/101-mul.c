@@ -12,12 +12,12 @@
 
 void _puts(char *m)
 {
-	int i = 0;
+	int n = 0;
 
-	while (m[i])
+	while (m[n])
 	{
-		_putchar(m[i]);
-		i++;
+		_putchar(m[n]);
+		n++;
 	}
 }
 
@@ -45,6 +45,7 @@ int _atoi(const char *mon)
 		r *= 10;
 		r += (mon[n] - 48);
 	}
+
 	return (sign * r);
 }
 
@@ -59,7 +60,10 @@ void print_int(unsigned long int m)
 	unsigned long int d = 1, i, r;
 
 	for (i = 0; m / d > 9; i++, d *= 10)
+	{
 		;
+	}
+
 	for (; d >= 1; m %= d, d /= 10)
 	{
 		r = m / d;
@@ -70,7 +74,7 @@ void print_int(unsigned long int m)
 /**
 * main - a program that multiplies two positive numbers.
 * @argc: number of arguments.
-* @argv: array.
+* @argv: array list.
 * Return: 0.
 */
 
