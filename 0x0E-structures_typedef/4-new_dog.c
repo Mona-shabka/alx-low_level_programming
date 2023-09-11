@@ -9,10 +9,10 @@
 
 int strlen(const char *mon)
 {
-	int length;
+	int length = 0;
 
-	for (length = 0; *mon++; length++)
-		;
+	while (*mon++)
+		length++;
 	return (length);
 }
 
