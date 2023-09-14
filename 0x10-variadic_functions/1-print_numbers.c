@@ -19,7 +19,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		return;
 	}
 	va_start(list, n);
-	for (m = n; n != 0; m--)
+	for (m = n; n != NULL; m--)
 		printf("%d%s", va_arg(list, int), m ? (separator ? separator : "") : "\n");
 	va_end(list);
 }
