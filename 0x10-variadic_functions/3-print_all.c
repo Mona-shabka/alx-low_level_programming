@@ -72,9 +72,9 @@ void print_all(const char * const format, ...)
 	while (format && format[x])
 	{
 		y = 0;
-		while (tokens[y].list)
+		while (tokens[y].chara)
 		{
-			if (format[x] == tokens[y].list[0])
+			if (format[x] == tokens[y].chara[0])
 			{
 				tokens[y].fun(separator, listt);
 				separator = ", ";
