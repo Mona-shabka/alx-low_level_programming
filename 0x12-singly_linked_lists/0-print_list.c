@@ -17,8 +17,6 @@ int _strlen(char *m)
 	return (n);
 }
 
-#include "lists.h"
-
 /**
  * print_list - a function that prints all the elements of a list_t list.
  * @h: first node pointer.
