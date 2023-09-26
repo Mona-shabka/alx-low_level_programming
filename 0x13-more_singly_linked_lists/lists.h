@@ -39,7 +39,7 @@ listint_t *find_listint_loop(listint_t *head);
 int _putchar(char c);
 const listint_t **_m(const listint_t
 		**llist, size_t ssize, const listint_t *nnew);
-
+listint_t *find(listint_t *head);
 
 
 #endif
