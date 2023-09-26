@@ -16,7 +16,7 @@ listint_t *find(listint_t *head)
 	{
 		if (fin == fin->next)
 			return (fin);
-		for (point = head; point != fine; point = point->next)
+		for (point = head; point != fin; point = point->next)
 			if (point == fin->next)
 				return (fin->next);
 	}
