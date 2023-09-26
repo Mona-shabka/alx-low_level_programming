@@ -37,5 +37,9 @@ size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 int _putchar(char c);
+const listint_t **_r(const listint_t
+		**llist, size_t ssize, const listint_t *nnew);
+
+
 
 #endif
