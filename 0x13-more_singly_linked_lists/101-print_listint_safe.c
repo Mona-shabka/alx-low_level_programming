@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
- * listint_t **_r - a function that reallocate memory of array pointer.
+ * listint_t **_m - a function that reallocate memory of array pointer.
  * @llist: old list.
  * @ssize: new list size.
  * @nnew: new node to be add in list.
  * Return: new list pointer.
  */
 
-const listint_t **_r(const listint_t
+const listint_t **_m(const listint_t
 		**llist, size_t ssize, const listint_t *nnew)
 {
 	const listint_t **new;
@@ -50,7 +50,7 @@ size_t print_listint_safe(const listint_t *head)
 			}
 		}
 		number++;
-		llist = _r(llist, number, head);
+		llist = _m(llist, number, head);
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 	}
