@@ -6,13 +6,13 @@
  * Return: string length.
  */
 
-int _strlen(char *s)
+int _strlen(char *m)
 {
 	int n = 0;
 
-	if (!s)
+	if (!m)
 		return (0);
-	while (*s++)
+	while (*m++)
 		n++;
 	return (n);
 }
@@ -26,17 +26,17 @@ int _strlen(char *s)
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd;
+	int file;
 	ssize_t n_byte = 0;
 	ssize_t length = _strlen(text_content);
 
 	if (!filename)
 		return (-1);
-	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC | S_IRUSR | S_IWUSR);
-	if (fd == -1)
+	file = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+	if (file == -1)
 		return (-1);
 	if (length)
-		n_byte = write(fd, text_content, length);
-	close(fd);
+		n_byte = write(file, text_content, length);
+	close(file);
 	return (n_byte == length ? 1 : -1);
 }
