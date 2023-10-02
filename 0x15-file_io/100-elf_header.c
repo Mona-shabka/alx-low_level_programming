@@ -70,7 +70,7 @@ void print_data(Elf64_Ehdr h)
 
 void print_version(Elf64_Ehdr h)
 {
-	printf("  Version:                           %d", h.e_ident[EI_version]);
+	printf("  Version:                           %d", h.e_ident[EI_VERSION]);
 	switch (h.e_ident[EI_VERSION])
 	{
 		case EV_CURRENT:
@@ -92,7 +92,7 @@ void print_version(Elf64_Ehdr h)
 void print_osabi(Elf64_Ehdr h)
 {
 	printf("  OS/ABI:                            ");
-	switch (h->e_ident[EI_OSABI])
+	switch (h.e_ident[EI_OSABI])
 	{
 	case ELFOSABI_NONE:
 		printf("UNIX - System V");
@@ -135,7 +135,7 @@ void print_osabi(Elf64_Ehdr h)
 
 void print_osabi_morre(Elf64_Ehdr h)
 {
-	switch (h->e_ident[EI_OSABI])
+	switch (h.e_ident[EI_OSABI])
 	{
 		case ELFOSABI_MODESTO:
 			printf("Novell - Modesto");
@@ -150,7 +150,7 @@ void print_osabi_morre(Elf64_Ehdr h)
 			printf("Standalone App");
 		break;
 		default:
-			printf("<unknown: %x>", h->e_ident[EI_OSABI]);
+			printf("<unknown: %x>", h.e_ident[EI_OSABI]);
 		break;
 	}
 }
