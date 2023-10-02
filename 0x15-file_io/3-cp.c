@@ -28,7 +28,7 @@ int main(int ac, char **av)
 	to_fd = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 	if (to_fd == -1)
 		dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
-	while ((m = read(from_fd, buffer, READ_BUD_SIZE)) > 0)
+	while ((m = read(from_fd, buffer, READ_BUF_SIZE)) > 0)
 		if (write(to_fd, buffer, m) != m)
 			dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
 	if (m == -1)
